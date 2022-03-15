@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout UI</title>
+</head>
+<body>
+    <div class="payment">
+        <div class="bg">
+
+        </div>
+        <div class="card">
+           <img src="chip.png" alt="chip"> 
+           <div class="logo"></div>
+           <h2 class="bankName" contenteditable="true">xxBank</h2>
+           <form>
+                <div class="inputContainer">
+                    <label for="cardnum">Card Number</label>
+                    <input type="text" id="cardnum" placeholder="1111 2222 3333 4444" maxlength="19">
+                </div>
+
+                <div class="inputContainer">
+                    <label for="name">Card Holder's Name</label>
+                    <input type="text" id="name" placeholder="Sophia" >
+                </div>
+
+                <div class="confitmation">
+                    <div class="inputContainer">
+                        <label for="date">Valid to</label>
+                        <input type="text" id="date" placeholder="MM/YY" maxlength="5">
+                    </div>
+
+                    <div class="inputContainer">
+                        <label for="code">CCV</label>
+                        <input type="password" id="code" placeholder="***" maxlength="3">
+                    </div>
+    
+
+                </div>
+
+           </form>
+
+        </div>
+        <button class="btn">Confirm and Pay</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: linear-gradient(coral,white);
+}
+.payment {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    transition: 0.5s;
+
+}
+.payment:hover {
+    padding: 40px;
+}
+.bg{
+    position: absolute;
+    bottom: 0;
+    height:70%;
+    width: 100%;
+    background: linear-gradient(225deg,rgb(255,164,36),#ea222c);
+    border-radius: 25px;
+}
+.card {
+    position: relative;
+    width: 580px;
+    height: 350px;
+    background: #fcfcfc;
+    border-radius: 15px;
+    padding:40px;
+    box-shadow: 6px 6px 12px rgba(0,0,0,0.05);
+    z-index: 10;
+    transform: translateY(120px);
+    transition: 0.5;
+
+}
+.payment:hover .card {
+    transform: translateY(0);
+}
+img {
+    position: absolute;
+    width:70px;
+}
+.logo {
+    position: absolute;
+    top:130px;
+    right:40px;
+    width: 60px;
+    height: 60px;
+    background: #ea222c;
+    border-radius: 50%;
+    box-shadow: -40px 0 0 rgba(255,164,36,0.5);
+
+}
+
+.bankName {
+    color:#999;
+    text-align: end;
+    outline: none;
+    width: 100%;
+    font-size: 1.5em;
+
+}
+form {
+    margin-top: 45px;
+}
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+label {
+    font-size: 1.1em;
+}
+input {
+    border:none;
+    outline:none;
+    background: transparent;
+    font-size: 1.8em;
+    color:#333;
+    font-family: 'Share Tech Mono', monospace;
+
+}
+.confitmation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.confitmation .inputContainer:last-child {
+    max-width: 100px;
+}
+
+.btn {
+    position: relative;
+    margin-top: 40px;
+    padding:15px 20px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    background: #fff;
+    color:#333;
+    font-size: 1.5em;
+    cursor: pointer;
+}

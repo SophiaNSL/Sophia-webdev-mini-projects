@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Scroll to Top</title>
+
+    <style>
+        h1{
+            color:blue;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        #btn {
+            position:fixed;
+            right: 10px;
+            bottom: 10px;
+            width: 50px;
+            height:50px;
+            border-radius: 50%;
+            background-color: blue;
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            color: white;
+            cursor: pointer;
+        }
+
+        #btn:active {
+            background-color: cornflowerblue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Scroll to the top button</h1>
+    <button id="btn">
+        <span class="material-icons">
+            arrow_upward
+            </span>
+    </button>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nobis sequi, repudiandae ad officia eos repellat magnam consequatur velit alias minima, iure dignissimos. Eveniet, commodi porro quia eos repellendus dolorum impedit blanditiis quod adipisci doloremque nesciunt voluptatem iusto, quasi maxime debitis error tenetur aliquid eum architecto illum recusandae, expedita itaque?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nobis sequi, repudiandae ad officia eos repellat magnam consequatur velit alias minima, iure dignissimos. Eveniet, commodi porro quia eos repellendus dolorum impedit blanditiis quod adipisci doloremque nesciunt voluptatem iusto, quasi maxime debitis error tenetur aliquid eum architecto illum recusandae, expedita itaque?</p> 
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nobis sequi, repudiandae ad officia eos repellat magnam consequatur velit alias minima, iure dignissimos. Eveniet, commodi porro quia eos repellendus dolorum impedit blanditiis quod adipisci doloremque nesciunt voluptatem iusto, quasi maxime debitis error tenetur aliquid eum architecto illum recusandae, expedita itaque?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nobis sequi, repudiandae ad officia eos repellat magnam consequatur velit alias minima, iure dignissimos. Eveniet, commodi porro quia eos repellendus dolorum impedit blanditiis quod adipisci doloremque nesciunt voluptatem iusto, quasi maxime debitis error tenetur aliquid eum architecto illum recusandae, expedita itaque?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nobis sequi, repudiandae ad officia eos repellat magnam consequatur velit alias minima, iure dignissimos. Eveniet, commodi porro quia eos repellendus dolorum impedit blanditiis quod adipisci doloremque nesciunt voluptatem iusto, quasi maxime debitis error tenetur aliquid eum architecto illum recusandae, expedita itaque?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nobis sequi, repudiandae ad officia eos repellat magnam consequatur velit alias minima, iure dignissimos. Eveniet, commodi porro quia eos repellendus dolorum impedit blanditiis quod adipisci doloremque nesciunt voluptatem iusto, quasi maxime debitis error tenetur aliquid eum architecto illum recusandae, expedita itaque?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nobis sequi, repudiandae ad officia eos repellat magnam consequatur velit alias minima, iure dignissimos. Eveniet, commodi porro quia eos repellendus dolorum impedit blanditiis quod adipisci doloremque nesciunt voluptatem iusto, quasi maxime debitis error tenetur aliquid eum architecto illum recusandae, expedita itaque?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nobis sequi, repudiandae ad officia eos repellat magnam consequatur velit alias minima, iure dignissimos. Eveniet, commodi porro quia eos repellendus dolorum impedit blanditiis quod adipisci doloremque nesciunt voluptatem iusto, quasi maxime debitis error tenetur aliquid eum architecto illum recusandae, expedita itaque?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nobis sequi, repudiandae ad officia eos repellat magnam consequatur velit alias minima, iure dignissimos. Eveniet, commodi porro quia eos repellendus dolorum impedit blanditiis quod adipisci doloremque nesciunt voluptatem iusto, quasi maxime debitis error tenetur aliquid eum architecto illum recusandae, expedita itaque?</p>
+
+    </div>
+
+    <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', () => {
+            window.scrollTo(0,0);
+
+            window.scrollTo({
+                top: 0,
+                left:0,
+                behavior: "smooth"
+
+            });
+
+            // $("html,body").animate({scrollTop:0},"slow");
+
+
+        });
+
+    </script>
+
+</body>
+</html>
