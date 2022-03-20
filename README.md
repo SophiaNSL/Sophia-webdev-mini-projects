@@ -25,5 +25,6 @@ Each project in the series has its own folder, so you'll need to select that fol
 |project-16   |Snowman-CSS drwaing                            |25/12/2021
 |project-17   |Responsive Navbar                              |31/01/2022
 |project-18   |Amazing Hover Effect                           |22/02/2022
+|project-19   |Amazing Icons Hover Effect                     |20/03/2022
 ---
 # [Sophia-webdev Channel](https://space.bilibili.com/1468907420?spm_id_from=333.1007.0.0)
